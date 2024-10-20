@@ -13,7 +13,7 @@ const Header = () => {
     dispatch(toggleMenuButton());
   };
 
-  const toggleMenu = useSelector((store) => store.toggleMenu.isToggleMenu);
+  const toggleMenuTask = useSelector((store) => store.toggleMenu.isToggleMenu);
   return (
     <>
       <div>
@@ -39,11 +39,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="grid grid-cols-12">
-          <div className={toggleMenu ? " col-span-2" : "hidden"}>
+          <div className={toggleMenuTask ? " col-span-2" : "hidden"}>
             <Sidebar />
           </div>
 
-          <div className={toggleMenu ? " col-span-10" : " col-span-12"}>
+          <div className={toggleMenuTask ? " col-span-10" : " col-span-12"}>
             <Outlet />
           </div>
         </div>
