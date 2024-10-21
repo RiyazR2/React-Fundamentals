@@ -38,8 +38,8 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="grid grid-cols-12">
-          <div className={toggleMenuTask ? " col-span-2" : "hidden"}>
+        <div className="grid grid-cols-12 ">
+          <div className={toggleMenuTask ? " col-span-2 " : "hidden"}>
             <Sidebar />
           </div>
 

@@ -32,14 +32,6 @@ const About = () => {
           </p>
         </section>
       </main>
-
-      <footer className="bg-blue-600 text-white py-6 mt-10">
-        <div className="container mx-auto px-4">
-          <p className="text-center">
-            © 2024 Machine Coding. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };

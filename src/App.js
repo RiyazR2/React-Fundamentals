@@ -7,14 +7,16 @@ import appStore from "./redux/appStore";
 import { Provider } from "react-redux";
 import Task1 from "./tasks/Task1";
 import Task2 from "./tasks/Task2";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
-      <div>
+      <div className="font-serif">
         <Provider store={appStore}>
           <RouterProvider router={appRouter} />
         </Provider>
+        <Footer />
       </div>
     </>
   );
